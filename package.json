@@ -1,0 +1,25 @@
+{
+  "name": "test-quantum",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.9.4"
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inferno": "^3.4.3",
+    "inferno-component": "^3.4.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-plugin-inferno": "^3.2.0",
+    "fuse-box": "^2.1.0",
+    "typescript": "^2.3.4",
+    "uglify-js": "^3.0.15"
+  }
+}
