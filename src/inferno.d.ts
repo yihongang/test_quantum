@@ -1,4 +1,4 @@
-import { InfernoChildren, VNode } from "inferno";
+import { InfernoChildren, VNode } from 'inferno';
 
 declare namespace Inferno {
   type Key = string | number;
@@ -22,11 +22,17 @@ declare namespace Inferno {
   interface HTMLProps<T> extends HTMLAttributes<T>, ClassAttributes<T> {}
 }
 
+interface HTMLButtonElement {
+  onClick: object;
+}
+
 declare global {
   namespace JSX {
     interface Element extends VNode {}
     interface IntrinsicElements {
       a: Inferno.HTMLProps<HTMLAnchorElement>;
+      div: Inferno.HTMLProps<HTMLDivElement>;
+      button: HTMLButtonElement;
     }
   }
 }
